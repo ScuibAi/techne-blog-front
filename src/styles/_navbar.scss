@@ -1,0 +1,119 @@
+$gradient-orange-1: #C41740;
+$gradient-orange-2: #EA9C28;
+$bg-grey: #F2F4F7;
+$box-shade: #1e283414;
+
+@mixin gradient-col() {
+    background: linear-gradient(to right, $gradient-orange-1, $gradient-orange-2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.main-header {
+    padding: 20px 104px;
+    box-shadow: 0 4px 70px 0 $box-shade;
+    .prenav {
+        gap: 100px;
+        svg {
+            display: none;
+            width: 24px;
+            fill: $text-black;
+            cursor: pointer;
+        }
+    }
+    ul {
+        gap: 30px;
+        li {
+            a {
+                color: $text-black;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: capitalize;
+                &.active {
+                    @include gradient-col();
+                }
+            }
+        }
+    }
+}
+
+.logo {
+    line-height: 24px;
+    font-size: 23px;
+    font-weight: 800;
+    color: $text-black;
+}
+
+.dropdown {
+    display: none;
+}
+
+
+@media only screen and (min-width: 744px) and (max-width: 870px) {
+    .main-header {
+        padding: 20px;
+    }
+
+    button {
+        display: none;
+    }
+
+    .logo {
+        line-height: 20px;
+        font-size: 19px;
+    }
+    
+    .dropdown {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .main-header{
+        padding: 20px;
+        .prenav {
+            svg {
+                display: block;
+            }
+            nav {
+                display: none;
+            }
+        }
+    }
+     
+    button {
+        display: none;
+    }
+
+    .logo {
+        line-height: 16px;
+        font-size: 15px;
+    }
+
+    .dropdown {
+        display: block;
+        text-align: left;
+        left: 0;
+        top: 64px;
+        ul {
+            gap: 10px;
+            flex-direction: column;
+            li {
+                text-align: left;
+                width: 100%;
+                padding: 10px;
+                a {
+                    text-align: left;
+                    font-size: 22px;
+                    line-height: 28.6px;
+                }
+                &:hover{
+                    background-color: $bg-grey;
+                    transition: .3s all ease-in;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
