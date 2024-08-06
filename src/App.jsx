@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import './styles/style.scss'
-import ArticleCard from './components/ArticleCard'
-import Button from './components/Button'
-import Navbar from './components/Navbar'
+// import ArticleCard from './components/ArticleCard'
+// import Button from './components/Button'
+// import Navbar from './components/Navbar'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './screens/Home'
 import Login from './screens/Login'
@@ -33,3 +33,4 @@ function App() {
 }
 
 export default App
+
