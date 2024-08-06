@@ -7,9 +7,9 @@ const Navbar = () => {
 
     // Determine background and text colors based on the current route 
     const textColorClass =
-      location.pathname === "/" ? "navcolor" : "text-[#1D2939]";
+      location.pathname === "/" ? "navcolor" : "";
       const DigestColorClass =
-      location.pathname === "/daily-digest" ? "navcolor" : "text-[#1D2939]";
+      location.pathname === "/daily-digest" ? "navcolor" : "";
 
   return (
     <header className='main-header bg-[#F9F9F9] flex fixed box-border justify-between w-full items-center'>
