@@ -9,6 +9,19 @@ $box-shade: #1e283414;
     -webkit-background-clip: text;
 }
 
+@mixin nav-color() {
+    background: linear-gradient(to right, $gradient-orange-1, $gradient-orange-2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@mixin gradient-color() {
+    background: linear-gradient(to right, $gradient-orange-2, $gradient-orange-1);
+   
+
+}
+
+
 .main-header {
     padding: 20px 104px;
     box-shadow: 0 4px 70px 0 $box-shade;
@@ -43,6 +56,12 @@ $box-shade: #1e283414;
     font-size: 23px;
     font-weight: 800;
     color: $text-black;
+}
+.herocolor{
+    @include gradient-color();
+}
+.navcolor{
+    @include nav-color();
 }
 
 .dropdown {

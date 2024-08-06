@@ -6,15 +6,29 @@ import './styles/style.scss'
 import ArticleCard from './components/ArticleCard'
 import Button from './components/Button'
 import Navbar from './components/Navbar'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './screens/Home'
+import Login from './screens/Login'
+import Signup from './screens/Signup'
+import Create from './screens/Create'
+import Dailys from './screens/Dailys'
+import UserPage from './screens/UserPage'
 // import 'tailwindcss/dist/tailwind.css';
 
 function App() {
 
   return (
-    <>
-      <Home/>
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={ <Home/>}/>
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/create" element={<Create />} />
+      <Route path="/daily-digest" element={<Dailys />} />
+      <Route path="/user-page" element={<UserPage />} />
+    </Routes>
+ 
+    </BrowserRouter>
   )
 }
 

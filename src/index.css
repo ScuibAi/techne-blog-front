@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Light";
+    src: url("AderoTrial-Light"), url("./assets/fonts/AderoTrial-Light.otf");
+  }
+  
+  @font-face {
+    font-family: "Regular";
+    src: url("AderoTrial-Regular"), url("./assets/fonts/AderoTrial-Regular.otf");
+  }
+  
+  @font-face {
+    font-family: "Bold";
+    src: url("AderoTrial-Bold"),
+      url("./assets/fonts/AderoTrial-Bold.otf");
+  }
+  @font-face {
+    font-family: "Extabold";
+    src: url("AderoTrial-ExtaBold"), url("./assets/fonts/AderoTrial-ExtaBold.otf");
+  }
+  

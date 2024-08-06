@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from './Button'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+    const location = useLocation(); // Get current location
+
+    // Determine background and text colors based on the current route 
+    const textColorClass =
+      location.pathname === "/" ? "navcolor" : "text-[#1D2939]";
+      const DigestColorClass =
+      location.pathname === "/daily-digest" ? "navcolor" : "text-[#1D2939]";
+
   return (
-    <header className='main-header bg-yellow-100 flex fixed box-border justify-between w-full items-center'>
+    <header className='main-header bg-[#F9F9F9] flex fixed box-border justify-between w-full items-center'>
         <a href="" className='logo capitalize' aria-label='techne logo'>
             techne &trade;
         </a>
@@ -13,7 +22,9 @@ const Navbar = () => {
             </svg>
             <nav>
                 <ul className='flex items-center'>
-                    <li><a href="" className='active'>daily digest</a></li>
+                {/* <li><a href="" className='active'>Home</a></li> */}
+                <Link to="/"  className={textColorClass}>Home</Link>
+                <Link to="/daily-digest"  className={DigestColorClass} > daily digest </Link>
                     <li><a href="">design tools</a></li>
                     <li><a href="">tutorials</a></li>
                 </ul>
@@ -22,7 +33,7 @@ const Navbar = () => {
         </div>
         <div className='absolute dropdown w-full'>
             <ul className='flex items-center'>
-                <li><a href="" className='active'>daily digest</a></li>
+               {/* <Link to="/daily-digest" className='active'>daily digest</Link> */}
                 <li><a href="">design tools</a></li>
                 <li><a href="">tutorials</a></li>
             </ul>
