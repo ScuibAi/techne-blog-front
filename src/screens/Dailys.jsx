@@ -56,8 +56,8 @@ const Dailys = () => {
     <>
     <Navbar/>
     <div className='flex md:flex-row flex-col bg-[#F2F6F5] pt-[100px] md:justify-start md:items-start justify-center items-center'>
-    <span className="lg:w-[90%] w-[75%]">  <DailyDigest /> </span> 
-    <span className="lg:w-[15%] w-[20%] ">  <Collections /></span> 
+    <span className=" w-[100%]">  <DailyDigest /> </span> 
+    {/* <span className="lg:w-[15%] w-[20%] ">  <Collections /></span>  */}
     </div>
     </>
   )

@@ -65,7 +65,7 @@ return (
   <div className='   '>
 
   
-  <div className=' pt-[30px] lg:w-[90%] md:w-[75%] w-[100%] flex flex-wrap justify-center items-center gap-[20px] pb-[20px]  '>
+  <div className=' pt-[30px]  w-[100%] flex flex-wrap justify-center items-center gap-[20px] pb-[20px]  '>
     {blogs.map((blog) => (
       <div className='justify-center items-center ' key={blog}>
   
