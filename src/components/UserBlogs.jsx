@@ -69,7 +69,7 @@ return (
 
 
 
-<div className=' lg:w-[90%] md:w-[75%] w-[100%]'>
+<div className=' w-[100%]'>
 
 
 

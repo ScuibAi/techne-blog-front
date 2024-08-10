@@ -25,9 +25,9 @@ const UserPage = () => {
 </div>
 <span className='flex md:w-[600px] w-[200px] mt-[40px] border border-gray-200'></span>
 </div>
-     <div className='flex md:flex-row flex-col  md:justify-start md:items-start justify-center items-center'>
-    <span className="lg:w-[90%] w-[75%]">  <UserBlogs /> </span> 
-    <span className="lg:w-[20%] w-[25%] ">  <Collections /></span> 
+     <div className='flex md:flex-row flex-col md:justify-start md:items-start justify-center items-center'>
+    <span className="w-[100%]">  <UserBlogs /> </span> 
+    {/* <span className="lg:w-[20%] w-[25%] ">  <Collections /></span>  */}
     </div>
     </div>
     </>
