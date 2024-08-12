@@ -69,7 +69,7 @@ return (
     {blogs.map((blog) => (
       <div className='justify-center items-center ' key={blog}>
   
-<div className='bg-white w-[300px] h-[400px] justify-start items-center flex flex-col items-center '>
+<div onClick={() => navigate("/single-post")} className='bg-white w-[300px] h-[400px] justify-start items-center flex flex-col items-center '>
 <span className=' flex justify-center items-center  '>
 <span > <img src={blog.img} className=' w-[300px] h-[225px]' alt="" /></span>
 </span>
@@ -93,9 +93,9 @@ return (
 </div>
 
 </div>
-<div className='flex justify-center items-center w-auto absolute mt-[87px]  pt-[20px] gap-[10px]'>
+{/* <div className='flex justify-center items-center w-auto absolute mt-[87px]  pt-[20px] gap-[10px]'>
 
-</div>
+</div> */}
 </div>
 
 
