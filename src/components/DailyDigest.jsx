@@ -62,14 +62,12 @@ const DailyDigest = () => {
 
 return (
   <>
-  <div className='   '>
 
-  
-  <div className=' pt-[30px]  w-[100%] flex flex-wrap justify-center items-center gap-[20px] pb-[20px]  '>
+  <div className='md:pl-[75px] pt-[30px]  w-[100%] flex flex-wrap md:justify-start justify-center items-center gap-[20px] pb-[20px]  '>
     {blogs.map((blog) => (
-      <div className='justify-center items-center ' key={blog}>
+      <div className='flex justify-start items-center' key={blog}>
   
-<div onClick={() => navigate("/single-post")} className='bg-white w-[300px] h-[400px] justify-start items-center flex flex-col items-center '>
+<div onClick={() => navigate("/single-post")} className='bg-white w-[300px] h-[400px] justify-start items-center flex flex-col  '>
 <span className=' flex justify-center items-center  '>
 <span > <img src={blog.img} className=' w-[300px] h-[225px]' alt="" /></span>
 </span>
@@ -110,7 +108,7 @@ return (
 
 
  
-  </div>
+
   </>
 )
 }

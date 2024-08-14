@@ -69,11 +69,11 @@ return (
 
 
 
-<div className=' w-[100%]'>
+<div className=' lg:w-[95%] w-[100%]'>
 
 
 
-<div className=' pt-[30px] w-full flex flex-wrap justify-center items-center gap-[20px] pb-[20px]  '>
+<div className=' pt-[30px] w-full flex flex-wrap lg:justify-start justify-center items-center gap-[20px] pb-[20px]  '>
 {blogs.map((blog) => (
   <div className='justify-center items-center ' key={blog}>
 
