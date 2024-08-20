@@ -76,7 +76,7 @@ const navigate = useNavigate()
                
                     </span>
            
-                <span className="flex justify-center items-center mt-[30px] w-[80%] lg:w-[40%] h-[64px] mouse-pointer text-white bg-[#C41740] focus:outline-none focus:border-orange-500 border border-[1px] border-solid border-[#AD1919]  text-center rounded-[10px] ">
+                <span className="flex justify-center items-center mt-[30px] w-[80%] lg:w-[40%] h-[64px] mouse-pointer  bg-[#EA9C28] mouse-pointer text-white hover:bg-[#C41740] focus:outline-none  text-center rounded-[10px] ">
                   Login
                 </span>
 <div className="flex gap-[5px] text-[16px]">

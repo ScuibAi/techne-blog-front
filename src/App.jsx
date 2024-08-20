@@ -14,7 +14,8 @@ import Create from './screens/Create'
 import Dailys from './screens/Dailys'
 import UserPage from './screens/UserPage'
 import FullPost from './screens/FullPost';
-// import 'tailwindcss/dist/tailwind.css';
+import ResetPassword from './screens/ResetPassword';
+
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Route path="/" element={ <Home/>}/>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
       <Route path="/create" element={<Create />} />
       <Route path="/daily-digest" element={<Dailys />} />
       <Route path="/user-page" element={<UserPage />} />

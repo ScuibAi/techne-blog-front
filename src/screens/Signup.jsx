@@ -43,13 +43,13 @@ const Signup = () => {
    
         <div className="  bg-[#ffffff] pb-[150px] justify-center items-center align-center ">
           <div className="flex pt-[30px] justify-center items-center align-center mb-[20px] text-center">
-          <p className=" text-xl pt-[10px] text-[36px] font-AderoRegular justify-center items-center text-center  font-neueRegular">
+          <p className=" text-xl pt-[10px] text-[36px] font-AderoRegular justify-center items-center text-center ">
              Sign Up
             </p>
           </div>
          
           <div className="flex flex-col justify-center items-center mb-[30px]">
-          <div className="flex justify-center items-center text-white hover:bg-[#c1c1c1] hover:text-black md:mt-[20px] mt-[10px] text-normal md:text-lg bg-black xl:w-[50.8%] w-[80%] md:h-[64px] h-[54px] border border-[1px] border-solid border-black hover:border-[#1A7F64] rounded-[10px]">
+          <div className="flex justify-center items-center text-white md:mt-[20px] mt-[10px] text-normal md:text-lg bg-black xl:w-[50.8%] w-[80%] md:h-[64px] h-[54px] border border-[1px] border-solid border-black hover:border-[#1A7F64] rounded-[10px]">
               
                     <svg
                       className="w-[28px] h-[28px] mr-[10px]"
@@ -83,8 +83,8 @@ const Signup = () => {
             <form className="  justify-center items-center text-center  ">
               <div className="flex flex-col justify-ceter items-center w-[100%]  md:mt-[0px] mt-[10px]">          
                 <div className="flex flex-wrap justify-center ">
-                <span   className="mt-[20px] md:mx-[10px] flex justify-start items-center bg-[#ffffff] w-[80%] lg:w-[40.5%] h-[64px] border border-1 border-black pl-[15px] rounded-[10px] focus:outline-none focus:border-orange-500  ">
-                {/* <BiUser/> */}
+                {/* <span   className="mt-[20px] md:mx-[10px] flex justify-start items-center bg-[#ffffff] w-[80%] lg:w-[40.5%] h-[64px] border border-1 border-black pl-[15px] rounded-[10px] focus:outline-none focus:border-orange-500  ">
+        
                 <input
                  className=" w-[100%] h-[54px] rounded-[10px] md:pl-[15px]  focus:outline-none  "
             
@@ -98,7 +98,7 @@ const Signup = () => {
                     </span>
           
                 <span   className="mt-[20px] gap-[10px] md:mx-[10px]  flex justify-start items-center bg-[#ffffff] w-[80%] lg:w-[40.5%] h-[64px] border border-1 border-black rounded-[10px] pl-[15px] focus:outline-none focus:border-orange-500  ">
-                {/* <BiUser/> */}
+         
                 <input
                  className=" w-[100%] h-[54px] rounded-[10px] md:pl-[15px]  focus:outline-none  "
              
@@ -109,7 +109,7 @@ const Signup = () => {
                   required
                 />
                
-                    </span>
+                    </span> */}
 
 
                     <span   className="mt-[20px] gap-[10px] md:mx-[10px]  flex justify-start items-center bg-[#ffffff] w-[80%] lg:w-[40.5%] h-[64px] border border-1 border-black rounded-[10px] pl-[15px] focus:outline-none focus:border-orange-500  ">
@@ -117,7 +117,7 @@ const Signup = () => {
                 <input
                  className=" w-[100%] h-[54px] rounded-[10px] md:pl-[15px]  focus:outline-none  "
              
-                  placeholder="Last Name"
+                  placeholder="Username"
                   type="text"
              
                   onChange={onMutate}
@@ -126,7 +126,7 @@ const Signup = () => {
                
                     </span>
                     <span   className="mt-[20px] md:mx-[10px] gap-[10px] flex justify-start items-center bg-[#ffffff] w-[80%] lg:w-[40.5%] h-[64px] border border-1 border-black rounded-[10px] pl-[15px]  focus:outline-none focus:border-orange-500  ">
-                {/* <BiGlobe/> */}
+  
                 <input
                  className=" w-[100%] h-[54px] rounded-[10px] pl-[15px]  focus:outline-none  "
                
@@ -172,7 +172,7 @@ const Signup = () => {
       
        
               </div>
-              <p className="flex justify-center items-center mt-[30px] w-[80%] lg:w-[40%] h-[64px] mouse-pointer text-white bg-[#C41740] focus:outline-none focus:border-orange-500 border border-[1px] border-solid border-[#AD1919] text-center rounded-[10px] ">
+              <p className="flex justify-center items-center mt-[30px] w-[80%] lg:w-[40%] h-[64px]  bg-[#EA9C28] mouse-pointer text-white hover:bg-[#C41740] text-center rounded-[10px] ">
 Signup
                 </p>
               </div>
