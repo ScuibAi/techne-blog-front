@@ -15,6 +15,7 @@ import Dailys from './screens/Dailys'
 import UserPage from './screens/UserPage'
 import FullPost from './screens/FullPost';
 import ResetPassword from './screens/ResetPassword';
+import NotFound from './screens/NotFound';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Route path="/daily-digest" element={<Dailys />} />
       <Route path="/user-page" element={<UserPage />} />
       <Route path="/single-post" element={<FullPost />} />
+      <Route path='*' element={<NotFound/>}/>
     </Routes>
  
     </BrowserRouter>
